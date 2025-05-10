@@ -13,8 +13,9 @@
 #include <unordered_map>
 #include <map>
 #include <string>
+#include <memory>
 
 
-namespace hs_aud {
+namespace hs_pro_II {
     using namespace std;
 }

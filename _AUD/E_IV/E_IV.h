@@ -6,7 +6,7 @@
 
 #include "../_MAIN.h"
 
-namespace hs_a {
+namespace hs_aud {
 
     class E_IV {
     private:
@@ -21,4 +21,4 @@ namespace hs_a {
 
     };
 
-} // hs_a
+} // hs_aud

@@ -7,7 +7,7 @@
 #include "../_MAIN.h"
 #include <cmath>
 
-namespace hs_a {
+namespace hs_aud {
 
     class TowersOfHanoi {
     private:
@@ -21,4 +21,4 @@ namespace hs_a {
 
     };
 
-} // hs_a
+} // hs_aud

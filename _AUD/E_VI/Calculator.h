@@ -7,7 +7,7 @@
 #include "../_MAIN.h"
 #include "Stack.h"
 
-namespace hs_a {
+namespace hs_aud {
 
     template<typename valType>
     class Calculator {
@@ -27,4 +27,4 @@ namespace hs_a {
 
     };
 
-} // hs_a
+} // hs_aud

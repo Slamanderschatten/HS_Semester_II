@@ -6,7 +6,7 @@
 
 #include "../_MAIN.h"
 
-namespace hs_a {
+namespace hs_aud {
 
     class Vector {
     private:
@@ -23,4 +23,4 @@ namespace hs_a {
 
     };
 
-} // hs_a
+} // hs_aud

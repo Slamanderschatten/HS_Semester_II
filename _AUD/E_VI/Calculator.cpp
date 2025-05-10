@@ -4,7 +4,7 @@
 
 #include "Calculator.h"
 
-namespace hs_a {
+namespace hs_aud {
 
 
 
@@ -105,4 +105,4 @@ namespace hs_a {
 
 
 
-} // hs_a
+} // hs_aud

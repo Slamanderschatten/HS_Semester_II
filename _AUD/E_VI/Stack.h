@@ -7,7 +7,7 @@
 
 #pragma once
 
-namespace hs_a {
+namespace hs_aud {
 
     template<class item_type>
     class Stack {
@@ -67,4 +67,4 @@ namespace hs_a {
 
     };
 
-} // hs_a
+} // hs_aud

@@ -4,7 +4,7 @@
 
 #include "E_II.h"
 
-namespace hs_a {
+namespace hs_aud {
     int E_II::tIV_r(int n) {
         if(n <= 2)
             return 1;
@@ -72,4 +72,4 @@ namespace hs_a {
 
 
 
-} // hs_a
+} // hs_aud

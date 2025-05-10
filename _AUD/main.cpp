@@ -28,7 +28,7 @@
 
 
 int main() {
-    using namespace hs_a;
+    using namespace hs_aud;
     using namespace std;
 
 

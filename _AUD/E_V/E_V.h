@@ -4,7 +4,7 @@
 
 #pragma once
 
-namespace hs_a {
+namespace hs_aud {
 
     class E_V {
     private:
@@ -16,4 +16,4 @@ namespace hs_a {
 
     };
 
-} // hs_a
+} // hs_aud
