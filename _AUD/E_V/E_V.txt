@@ -1,0 +1,25 @@
+Aufgabe 16:
+
+
+
+Aufgabe 17:
+
+
+
+
+Aufgabe 18:
+
+a) n-1
+
+b) 2*n
+
+c) O mit strich drinn
+
+
+Aufgabe 19:
+
+a) n-2
+
+b) 3
+
+c) a => O    |     b => O mit strich drinn

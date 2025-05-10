@@ -1,0 +1,31 @@
+Aufgabe 2:
+
+a) Nein da keine größen ermittelt werden sollen
+b)
+Wassermänge x in Kaffemaschine füllen
+Filtertüte in den Filter legen
+x gramm Kaffepulver hineinfüllen
+Kaffemaschine anschalten
+Tasse harausholen
+Kaffee mänge x einfüllen
+Kaffee trinken bis tasse leer ist
+Kaffemaschine ausschalten
+
+Aufgabe 3:
+
+a) Nein da keine größen ermittelt werden sollen
+
+b)
+Benötigtes maß vorher messen
+
+Widersprüche in den Temperaturangaben (20-22°C vs. 45°C) klären.
+
+Genaue druckangaben zum eintauchen fehlen
+
+Präzisere Zeitangaben für die Modellierung und Aushärtung hinzufügen.
+
+Details zur Technik des Wickelns und Modellierens spezifizieren.
+
+Klare Anweisungen zur Handhabung der Gipsbinde (z. B. nicht auswringen, 50% Überlappung).
+
+Vermeidung von Druckstellen durch gleichmäßige Polsterung sicherstellen.

@@ -1,0 +1,42 @@
+Aufgabe 20:
+
+b)
+
+tail
+ \/
+|||| -> |||| -> |||| -> |||| -> 0
+
+
+PUSH
+tail
+ \/
+{|||| ->} |||| -> |||| -> |||| -> |||| -> 0
+new
+
+POP
+tail
+ \/
+{|||| ->} |||| -> |||| -> |||| -> |||| -> 0
+ deleted
+
+Bei einer lehren liste wird bei pop eine exception geworfen
+
+
+
+Aufgabe 21 && 22:
+class Calculator
+
+
+Aufgabe 23:
+
+a) postfix: ab * b + ac  /+
+   infix: a*b+b/a+c
+   4*8+8/4+2 = 36
+
+   ??? wieso wird das / und + zusammengeschrieben?
+
+b) 𝑎 𝑏 + 𝑐 + und 𝑎 𝑏 𝑐 + +      => Ja
+   𝑥𝑏 − 𝑐 ∗ und 𝑥𝑏 ∗ 𝑐 −        => Nein
+   𝑏𝑐 − 𝑥 ∗ und 𝑏𝑥 ∗ 𝑐𝑥 ∗ −     => Nein
+
+
