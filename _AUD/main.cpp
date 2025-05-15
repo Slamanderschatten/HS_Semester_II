@@ -267,7 +267,7 @@ int main() {
     }
 #endif
 
-#if TASK == 21 // INFIX => POSTFIX
+#if TASK == 21 // INFIX => POSTFIX and 22 POSTFIX Calculation
     {
 
 #if SUBTASK == 1
