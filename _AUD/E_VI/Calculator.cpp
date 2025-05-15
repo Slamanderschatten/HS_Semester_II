@@ -180,8 +180,8 @@ namespace hs_aud {
                     valAsString.clear();
                 }
             } else if(calcSymbols.find(c) != calcSymbols.end()) {
+                valType right = values.pop();
                 valType left = values.pop();
-                valType right = stoll(s.substr(numberStart + 1, i - numberStart - 1));
                 valType result;
                 switch(c) {
                     case '+': result = left + right; break;

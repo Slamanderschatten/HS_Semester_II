@@ -281,6 +281,7 @@ int main() {
 
         string postfix = calculator.infixToPostfix(calc);
         long long result = calculator.calcPostfix(postfix);
+        cout << endl << result << endl;
 #endif
 
 #if SUBTASK == 2
