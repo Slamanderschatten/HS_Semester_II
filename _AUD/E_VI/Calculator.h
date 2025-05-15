@@ -23,6 +23,8 @@ namespace hs_aud {
 
         Calculator();
         valType calc(string s);
+        string infixToPostfix(string s);
+        valType calcPostfix(string s);
 
 
     };
