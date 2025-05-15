@@ -13,7 +13,7 @@ namespace hs_aud {
     class Calculator {
     private:
         unordered_map<char, uint8_t> calcSymbols;
-        Stack<long long> sValues;
+        Stack<valType> sValues;
         Stack<char> sOperator;
 
 
