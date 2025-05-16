@@ -48,7 +48,7 @@ namespace hs_thi {
 
 
     size_t E_VI::timeOf_sos(size_t n) {
-        return 8*pow(n, 2);
+        return 8*pow(2, n);
     }
 
 

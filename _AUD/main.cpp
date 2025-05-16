@@ -271,27 +271,27 @@ int main() {
     {
 
 #if SUBTASK == 1
-        Calculator<long long> calculator;
+        Calculator<double> calculator;
 
         string calc;
         cout << "set calculation" << endl;
         //cin >> calc;
-        calc = "1+2*3-(4+5*1)*2";
-        //calc = "1+2+5*3+12-(4+5*4/2)*2+4*(6*3+1)";
+        //calc = "1.2+2*3-(4+5*1)*2";
+        calc = "1+2+5*3+12-(4+5*4/2)*2+4*(6*3+1)+0.1";
 
         string postfix = calculator.infixToPostfix(calc);
-        long long result = calculator.calcPostfix(postfix);
+        double result = calculator.calcPostfix(postfix);
         cout << endl << result << endl;
 #endif
 
 #if SUBTASK == 2
-        Calculator<long long int> calculator;
+        Calculator<double> calculator;
 
         string calc;
         cout << "set calculation" << endl;
         //cin >> calc;
-        //calc = "1+2*3-(4+5*1)*2";
-        calc = "1+2+5*3+12-(4+5*4/2)*2+4*(6*3+1)";
+        //calc = "1+2*3-(4+5*1)*2+0.1";
+        calc = "1+2+5*3+12-(4+5*4/2)*2+4*(6*3+1)+0.1";
         cout << calculator.calc(calc) << endl;
 #endif
 

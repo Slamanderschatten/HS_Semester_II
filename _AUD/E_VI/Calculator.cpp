@@ -18,9 +18,9 @@ namespace hs_aud {
     void Calculator<valType>::calcTopOfStacks() {
         if(sValues.size() < 2)
             return;
-        long long right = sValues.pop();
-        long long left = sValues.pop();
-        long long result;
+        valType right = sValues.pop();
+        valType left = sValues.pop();
+        valType result;
         switch (sOperator.pop()) {
             case '+':
                 result = left + right;
@@ -75,7 +75,11 @@ namespace hs_aud {
 
                 //take value
                 if(i - lastPos > 1) {
-                    valType val = stoll(calc.substr(lastPos + 1, i - lastPos - 1));
+                    valType val;
+                    if constexpr (is_integral_v<valType>)
+                        val = stoll(calc.substr(lastPos + 1, i - lastPos - 1));
+                    else if constexpr (is_floating_point_v<valType>)
+                        val = stod(calc.substr(lastPos + 1, i - lastPos - 1));
                     sValues.push(val);
                 }
                 lastPos = i;
@@ -109,7 +113,7 @@ namespace hs_aud {
         s += ')';
 
         for(char c : s) {
-            if(c <= '9' && c >= '0') {
+            if(c <= '9' && c >= '0' || c == '.') {
                 postfix += c;
                 cout << c;
             } else if(c == ' ') {
@@ -170,11 +174,15 @@ namespace hs_aud {
         string valAsString;
         for(size_t i = 0; i < s.size(); i++) {
             char c = s[i];
-            if(c <= '9' && c >= '0') {
+            if(c <= '9' && c >= '0' || c == '.') {
                 valAsString += c;
             } else if(c == ' ') {
                 if(!valAsString.empty()) {
-                    valType val = stoll(valAsString);
+                    valType val;
+                    if constexpr (is_integral_v<valType>)
+                        val = stoll(valAsString);
+                    else if constexpr (is_floating_point_v<valType>)
+                        val = stod(valAsString);
                     values.push(val);
                     numberStart = i + 1;
                     valAsString.clear();

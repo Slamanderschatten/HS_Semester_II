@@ -13,7 +13,7 @@ namespace hs_aud {
     class Stack {
         struct node
         {
-            explicit node(item_type e, node* next) : item(e), next(next) {}
+            node(item_type e, node* next) : item(e), next(next) {}
             item_type item;
             node *next = nullptr;
         };
