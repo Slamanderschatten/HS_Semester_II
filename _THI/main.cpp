@@ -4,12 +4,13 @@
 
 #include "_MAIN.h"
 #include "E_VI/E_VI.h"
+#include "E_VII/CodingHelper.h"
 
 
 
 
-#define TASK 6
-#define SUBTASK 2
+#define TASK 7
+#define SUBTASK 1
 
 
 
@@ -19,7 +20,6 @@ int main() {
 
 
 #if TASK == 6
-
 #if SUBTASK == 1
     {
         string out;
@@ -67,6 +67,46 @@ int main() {
 
     }
 #endif
-
 #endif
+
+
+#if TASK == 7
+
+#if SUBTASK == 1
+    {
+        unsigned int a[5] = {2, 0, 4, 8, 16};
+        string encoded = CodingHelper::encodeList(a, 5);
+        cout << "[2, 0, 4, 8, 16] = " << encoded << " = [";
+        string aOutS;
+        int aOutSize;
+        unsigned int* aOut = CodingHelper::decodeList(encoded, aOutSize);
+        for(int i = 0; i < aOutSize; i++) {
+            aOutS.append(to_string(aOut[i])).append(", ");
+        }
+        aOutS.pop_back();
+        aOutS.pop_back();
+        cout << aOutS << "]" << endl;
+        delete aOut;
+
+
+        unsigned int b[4] = {1, 17, 54, 85};
+        aOutS.clear();
+        encoded = CodingHelper::encodeList(b, 4);
+        cout << "[1, 17, 54, 85] = " << encoded << " = [";
+        aOut = CodingHelper::decodeList(encoded, aOutSize);
+        for(int i = 0; i < aOutSize; i++) {
+            aOutS.append(to_string(aOut[i])).append(", ");
+        }
+        aOutS.pop_back();
+        aOutS.pop_back();
+        cout << aOutS << "]" << endl;
+    }
+#endif
+
+#if SUBTASK == 2
+    {
+    }
+#endif
+#endif
+
 }
