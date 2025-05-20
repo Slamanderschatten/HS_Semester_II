@@ -1,0 +1,14 @@
+Aufgabe 26:
+
+delete:
+O(c)
+abfrage ob das gelöschte element das letzte element war,
+abfrage ob das gelöschte element das erste element war,
+abfrage ob die liste leer ist
+wenn nicht umschreiben des nächsten und vorangehenden nodes
+
+
+insert:
+O(c)
+abfragen ob die liste leer ist, wenn ja den start und end pointer setzen
+wenn nicht, abfrage ob das neue element das erste ist und begin setzen wenn nötig

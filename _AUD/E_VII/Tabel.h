@@ -81,19 +81,25 @@ namespace hs_aud {
             node* next = record->next;
             delete record;
 
-            if(next)
+            if(next) {
                 next->before = before;
-            else
+                record = next;
+            }
+            else {
                 end = before;
+                record = before;
+            }
 
             if(before) {
                 before->next = next;
-                record = before;
             }
             else {
                 begin = next;
-                record = next;
             }
+
+            if(!end)
+                begin = nullptr;
+
             return true;
         }
         bool get(itemType& r) {
