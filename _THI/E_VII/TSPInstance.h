@@ -73,6 +73,12 @@ public:
      */
     unsigned int getMaxPathLength() const;
 
+    /**
+     * return the matrix
+     * @return
+     */
+    unsigned int** getMatrix() const;
+
 
 private:
     TSPInstance();  // constructs an empty instance

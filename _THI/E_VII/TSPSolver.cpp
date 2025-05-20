@@ -9,12 +9,38 @@ using namespace std;
 
 
 string TSPSolver::getSolution(const string& tsp) {
-    // bitte implementieren!
+    TSPInstance instance(tsp);
+
+    unsigned int nodeSize = instance.getSize();
+    unsigned int maxPath = instance.getMaxPathLength();
+    unsigned int** matrix = instance.getMatrix();
+
+    unsigned int sequence[nodeSize+1];
+    for(size_t i = 0; i < nodeSize; i++)
+        sequence[i+1] = i;
+
+    size_t sum = 0;
+    for(int i = 2; i <= nodeSize; i++) {
+        sum += matrix[sequence[i-1]][sequence[i]];
+        if(sum > maxPath)
+            break;
+    }
+    if(sum <= maxPath)
+        return CodingHelper::encodeList(sequence);
+
+    for (int i = 0; i < nodeSize - 1; ++i) {
+        for (int j = 0; j < nodeSize - 1; ++j) {
+            std::swap(sequence[j], sequence[j + 1]);
+
+            sequence[0] = sequence[nodeSize];
+        }
+    }
 }
 
 
 
 
+/*
 int main() {
     unsigned int distances[100] = {
         0,   29,  20,  21,  16,  31,  100, 12,  4,   31,
@@ -33,6 +59,6 @@ int main() {
     s = TSPSolver::getSolution(s);
     cout << s << endl;
 }
-
+*/
 
 

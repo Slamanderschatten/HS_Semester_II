@@ -116,7 +116,7 @@ int main() {
         TSPInstance instance(CodingHelper::encodeList(tspInstanceArray));
         auto* tspInstanceArrayResult = CodingHelper::decodeList(instance.getEncoding());
         bool error = false;
-        for(int i = 0; i < 28; i++) {
+        for(int i = 0; i < tspInstanceArray[0]+1; i++) {
             if(tspInstanceArray[i] != tspInstanceArrayResult[i]){
                 error = true;
                 break;

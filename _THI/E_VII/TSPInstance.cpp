@@ -95,4 +95,9 @@ unsigned int TSPInstance::getDistance(unsigned int a, unsigned int b) const {
 }
 
 
+unsigned int** TSPInstance::getMatrix() const {
+    return adjacencyMatrix;
+}
+
+
 
