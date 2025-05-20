@@ -24,13 +24,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="448c38ea-697b-4c29-b494-db3adab581b6" name="Changes" comment="algorithm E7">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="448c38ea-697b-4c29-b494-db3adab581b6" name="Changes" comment="thi E7_1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_AUD/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/_AUD/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_THI/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_THI/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_THI/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/_THI/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,17 +77,17 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.theoretical">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Goedeler" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hs" TARGET_NAME="Goedeler" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hs" RUN_TARGET_NAME="Goedeler">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="Turingmaschine" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hs" TARGET_NAME="Turingmaschine" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hs" RUN_TARGET_NAME="Turingmaschine">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -136,7 +131,8 @@
       <workItem from="1747128602535" duration="593000" />
       <workItem from="1747302094342" duration="5607000" />
       <workItem from="1747383667234" duration="1286000" />
-      <workItem from="1747734130012" duration="10004000" />
+      <workItem from="1747734130012" duration="13857000" />
+      <workItem from="1747771503489" duration="425000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1746873063886</created>
@@ -229,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1747739374832</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="thi E7_1">
+      <created>1747749343811</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1747749343811</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,6 +251,7 @@
     <MESSAGE value="algo E6" />
     <MESSAGE value="add workspace to git" />
     <MESSAGE value="algorithm E7" />
-    <option name="LAST_COMMIT_MESSAGE" value="algorithm E7" />
+    <MESSAGE value="thi E7_1" />
+    <option name="LAST_COMMIT_MESSAGE" value="thi E7_1" />
   </component>
 </project>

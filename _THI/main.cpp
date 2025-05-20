@@ -74,13 +74,13 @@ int main() {
 
 #if SUBTASK == 1
     {
-        unsigned int a[5] = {2, 0, 4, 8, 16};
+        unsigned int a[6] = {6, 2, 1, 4, 8, 16};
         string encoded = CodingHelper::encodeList(a, 5);
-        cout << "[2, 0, 4, 8, 16] = " << encoded << " = [";
+        cout << "[6, 2, 1, 4, 8, 16] = " << encoded << " = [";
         string aOutS;
-        int aOutSize;
+        int aOutSize = 5;
         unsigned int* aOut = CodingHelper::decodeList(encoded, aOutSize);
-        for(int i = 0; i < aOutSize; i++) {
+        for(int i = 0; i < aOut[0]; i++) {
             aOutS.append(to_string(aOut[i])).append(", ");
         }
         aOutS.pop_back();
@@ -89,12 +89,12 @@ int main() {
         delete aOut;
 
 
-        unsigned int b[4] = {1, 17, 54, 85};
+        unsigned int b[5] = {5, 1, 17, 54, 85};
         aOutS.clear();
         encoded = CodingHelper::encodeList(b, 4);
-        cout << "[1, 17, 54, 85] = " << encoded << " = [";
+        cout << "[5, 1, 17, 54, 85] = " << encoded << " = [";
         aOut = CodingHelper::decodeList(encoded, aOutSize);
-        for(int i = 0; i < aOutSize; i++) {
+        for(int i = 0; i < aOut[0]; i++) {
             aOutS.append(to_string(aOut[i])).append(", ");
         }
         aOutS.pop_back();

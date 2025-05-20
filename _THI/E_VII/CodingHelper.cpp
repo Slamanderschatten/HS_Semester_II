@@ -5,6 +5,41 @@
 using namespace std;
 
 
+unsigned int* CodingHelper::decodeList(const string& s) {
+    if (!containsJust0And1(s)) return NULL;
+    size_t strLen = s.size();
+    string t = string(s);
+    int count = 0;
+    while (t.size() > 0) {
+        size_t i = t.find("0");
+        t = t.substr(i + 1);
+        string v = t.substr(0, i);
+        unsigned int nSize = decodeNumber(v);
+        if (t.size() < i + nSize)
+            return NULL;
+        t = t.substr(i + nSize);
+        count++;
+    }
+    unsigned int* a = new unsigned int[count + 1];
+
+    a[0] = count;
+    int j = 1;
+    t = string(s);
+    while (t.size() > 0) {
+        size_t i = t.find("0");
+        t = t.substr(i + 1);
+        string v = t.substr(0, i);
+        unsigned int nSize = decodeNumber(v);
+        t = t.substr(i);
+        string w = t.substr(0, nSize);
+        unsigned int k = decodeNumber(w);
+        a[j] = k;
+        j++;
+        t = t.substr(nSize);
+    }
+
+    return a;
+}
 
 
 
@@ -74,10 +109,10 @@ unsigned int* CodingHelper::decodeList(const string& s, int& outSize) {
 }
 
 
-string CodingHelper::encodeList(unsigned int* a, size_t aSize) {
+string CodingHelper::encodeList(const unsigned int* a, size_t aSize) {
     string compressed;
     int mask = numeric_limits<int>::min(); // only the first bit from the high site is 1
-    for(size_t i = 0; i<aSize; i++) {
+    for(size_t i = 0; i<=aSize; i++) {
 
         unsigned int value = a[i];
         string valueSerialized;
@@ -123,6 +158,9 @@ string CodingHelper::encodeList(unsigned int* a, size_t aSize) {
         }
         valueSizeSizeSerialized += '0';
 
+        if(i == aSize) {
+
+        }
         compressed.append(valueSizeSizeSerialized).append(valueSizeSerialized).append(valueSerialized);
     }
     return compressed;
