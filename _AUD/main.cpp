@@ -1,6 +1,8 @@
 
 
 
+#include <stdexcept>
+
 #include "_MAIN.h"
 #include "E_I/Collatz.h"
 #include "E_II/E_II.h"
@@ -12,12 +14,13 @@
 #include "E_VI/Stack.h"
 #include "E_VI/Calculator.h"
 #include "E_VI/Calculator.cpp"
+#include "E_VII/Tabel.h"
 
 
 
 
 
-#define TASK 21
+#define TASK 25
 #define SUBTASK 1
 
 
@@ -295,6 +298,72 @@ int main() {
         cout << calculator.calc(calc) << endl;
 #endif
 
+    }
+#endif
+
+#if TASK == 25 // stack
+    {
+        int errors = 0;
+        int in = 4;
+        int out = -1;
+        Table<int> table;
+
+        //empty
+        if(table.first()) errors++;
+        if(table.last()) errors++;
+        if(table.next()) errors++;
+        if(table.previous()) errors++;
+        if(table.erase()) errors++;
+        if(table.get(out)) errors++;
+        if(table.set(out)) errors++;
+
+        //one node
+        table.insert(1);
+        if(!table.get(out)) errors++;
+        if(out != 1) errors++;
+        if(!table.erase()) errors++;
+        table.append(2);
+        if(!table.get(out)) errors++;
+        if(out != 2) errors++;
+        if(!table.erase()) errors++;
+        table.append(3);
+
+        if(!table.first()) errors++;
+        if(!table.last()) errors++;
+        if(table.next()) errors++;
+        if(table.previous()) errors++;
+        if(!table.set(in/*4*/)) errors++;
+        if(!table.get(out))  errors++;
+        if(out != 4) errors++;
+        table.clear();
+
+        // more nodes
+        table.append(5);
+        table.append(6);
+        table.insert(7);
+        table.first();
+        if(!table.get(out)) errors++;
+        if(out != 7) errors++;
+        if(!table.erase()) errors++;
+        if(!table.get(out)) errors++;
+        if(out != 5) errors++;
+        if(!table.last()) errors++;
+        if(!table.get(out)) errors++;
+        if(out != 6) errors++;
+        if(!table.previous()) errors++;
+        if(!table.get(out)) errors++;
+        if(out != 5) errors++;
+        if(!table.next()) errors++;
+        if(!table.get(out)) errors++;
+        if(out != 6) errors++;
+
+        table.clear();
+        if(table.get(out)) errors++;
+
+
+
+
+        cout << "errors: " << errors << endl;
     }
 #endif
 

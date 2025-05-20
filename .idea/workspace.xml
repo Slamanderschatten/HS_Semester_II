@@ -24,7 +24,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="448c38ea-697b-4c29-b494-db3adab581b6" name="Changes" comment="algo E6" />
+    <list default="true" id="448c38ea-697b-4c29-b494-db3adab581b6" name="Changes" comment="add workspace to git">
+      <change afterPath="$PROJECT_DIR$/_AUD/E_VII/Tabel.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_AUD/E_VII/Tabel.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_AUD/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_AUD/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_AUD/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/_AUD/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +81,11 @@
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.algorithms">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Goedeler" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hs" TARGET_NAME="Goedeler" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hs" RUN_TARGET_NAME="Goedeler">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -123,7 +134,8 @@
       <workItem from="1747049538904" duration="10840000" />
       <workItem from="1747128602535" duration="593000" />
       <workItem from="1747302094342" duration="5607000" />
-      <workItem from="1747383667234" duration="387000" />
+      <workItem from="1747383667234" duration="1286000" />
+      <workItem from="1747734130012" duration="3735000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1746873063886</created>
@@ -181,7 +193,28 @@
       <option name="project" value="LOCAL" />
       <updated>1747308566145</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add workspace to git">
+      <created>1747384127218</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1747384127218</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add workspace to git">
+      <created>1747384266761</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1747384266761</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add workspace to git">
+      <created>1747384365767</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1747384365767</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,15 +231,26 @@
     <MESSAGE value="programming E6 started" />
     <MESSAGE value="theo inf E6" />
     <MESSAGE value="algo E6" />
-    <option name="LAST_COMMIT_MESSAGE" value="algo E6" />
+    <MESSAGE value="add workspace to git" />
+    <option name="LAST_COMMIT_MESSAGE" value="add workspace to git" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/_AUD/main.cpp</url>
-          <line>275</line>
+          <line>278</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/_AUD/main.cpp</url>
+          <line>339</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/_AUD/main.cpp</url>
+          <line>305</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
