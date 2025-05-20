@@ -2,6 +2,8 @@
 
 #include "TSPSolutionCandidate.h"
 #include <string>
+#include "CodingHelper.h"
+#include <cmath>
 
 using namespace std;
 
@@ -27,7 +29,7 @@ public:
      * distance between node i and j and b is the maximal 
      * allowed length of the round-trip.
      */
-    TSPInstance(string k);
+    explicit TSPInstance(const string& k);
 
     /*
      * Initializes a TSP-instance, where
@@ -38,6 +40,7 @@ public:
      * pathLen is the maximal allowed length for a round-trip.
      */
     TSPInstance(unsigned int size, unsigned int* adjMatrix, unsigned int pathLen);
+
 
     ~TSPInstance();
 

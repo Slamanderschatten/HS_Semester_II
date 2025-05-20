@@ -47,7 +47,7 @@ public:
      * This method is the counterpart of the method decode.
      * 
      */
-    static string encodeList(const unsigned int* a, size_t aSize);
+    static string encodeList(const unsigned int* a);
 
 
 

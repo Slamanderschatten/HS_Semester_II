@@ -3,11 +3,24 @@
 #include <stdexcept>
 #include <iostream>
 
+
 using namespace std;
 
 
-TSPInstance::TSPInstance(string k) : TSPInstance() {
-    // bitte implementieren!
+TSPInstance::TSPInstance(const string& compressed) : TSPInstance() {
+    unsigned int* decoded = CodingHelper::decodeList(compressed);
+    nodeSize = static_cast<unsigned int>(sqrt(static_cast<double>(decoded[0]-1)));
+    maxPathLen = decoded[1];
+    size_t k = 2;
+    adjacencyMatrix = new unsigned int* [nodeSize];
+    for (size_t i = 0; i < nodeSize; i++) {
+        adjacencyMatrix[i] = new unsigned int[nodeSize];
+        for (size_t j = 0; j < nodeSize; j++) {
+            adjacencyMatrix[i][j] = decoded[k];
+            k++;
+        }
+    }
+    delete decoded;
 }
 
 
@@ -45,7 +58,14 @@ TSPInstance::~TSPInstance() {
 
 
 string TSPInstance::getEncoding() const {
-    // bitte implementieren!
+    unsigned int size = static_cast<size_t>(pow(nodeSize, 2))+2;
+    unsigned int a[size];
+    a[0] = size-1;
+    a[1] = maxPathLen;
+    for(unsigned int i = 0; i < nodeSize; i++) {
+        memcpy(a + nodeSize * i + 2, adjacencyMatrix[i], sizeof(unsigned int) * nodeSize);
+    }
+    return CodingHelper::encodeList(a);
 }
 
 

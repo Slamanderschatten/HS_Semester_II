@@ -109,10 +109,11 @@ unsigned int* CodingHelper::decodeList(const string& s, int& outSize) {
 }
 
 
-string CodingHelper::encodeList(const unsigned int* a, size_t aSize) {
+string CodingHelper::encodeList(const unsigned int* a) {
     string compressed;
+    unsigned int aSize = a[0];
     int mask = numeric_limits<int>::min(); // only the first bit from the high site is 1
-    for(size_t i = 0; i<=aSize; i++) {
+    for(size_t i = 1; i<=aSize; i++) {
 
         unsigned int value = a[i];
         string valueSerialized;
@@ -158,9 +159,6 @@ string CodingHelper::encodeList(const unsigned int* a, size_t aSize) {
         }
         valueSizeSizeSerialized += '0';
 
-        if(i == aSize) {
-
-        }
         compressed.append(valueSizeSizeSerialized).append(valueSizeSerialized).append(valueSerialized);
     }
     return compressed;
