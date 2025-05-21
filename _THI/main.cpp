@@ -6,12 +6,13 @@
 #include "E_VI/E_VI.h"
 #include "E_VII/CodingHelper.h"
 #include "E_VII/TSPInstance.h"
+#include "E_VII/TSPSolver.h"
 
 
 
 
 #define TASK 7
-#define SUBTASK 2
+#define SUBTASK 3
 
 
 
@@ -123,6 +124,29 @@ int main() {
             }
         }
         error = error;
+    }
+#endif
+
+#if SUBTASK == 3
+    {
+        const unsigned int h = numeric_limits<unsigned int>::max();
+        auto* tspInstanceArray = new unsigned int[102] {101, 246,
+                                                       h,   29,  20,  21,  16,  31,  100, 12,  4,   31,
+                                                       29,  h,   15,  29,  28,  40,  72,  21,  29,  41,
+                                                       20,  15,  h,   15,  14,  25,  81,  9,   23,  27,
+                                                       21,  29,  15,  h,   4,   12,  92,  12,  25,  13,
+                                                       16,  28,  14,  4,   h,   16,  94,  9,   20,  16,
+                                                       31,  40,  25,  12,  16,  h,   95,  24,  36,  3,
+                                                       100, 72,  81,  92,  94,  95,  h,   90,  101, 99,
+                                                       12,  21,  9,   12,  9,   24,  90,  h,   15,  25,
+                                                       4,   29,  23,  25,  20,  36,  101, 15,  h,   35,
+                                                       31,  41,  27,  13,  16,  3,   99,  25,  35,  h
+        };
+        auto* tspInstanceArrayResult = CodingHelper::decodeList(TSPSolver::getSolution(CodingHelper::encodeList(tspInstanceArray)));
+
+        for(int i = 0; i < tspInstanceArrayResult[0]+1; i++) {
+            cout << tspInstanceArrayResult[i] << " ";
+        }
     }
 #endif
 #endif

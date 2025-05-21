@@ -12,30 +12,46 @@ string TSPSolver::getSolution(const string& tsp) {
     TSPInstance instance(tsp);
 
     unsigned int nodeSize = instance.getSize();
-    unsigned int maxPath = instance.getMaxPathLength();
-    unsigned int** matrix = instance.getMatrix();
 
     unsigned int sequence[nodeSize+1];
+    sequence[0] = nodeSize;
     for(size_t i = 0; i < nodeSize; i++)
         sequence[i+1] = i;
 
-    size_t sum = 0;
-    for(int i = 2; i <= nodeSize; i++) {
-        sum += matrix[sequence[i-1]][sequence[i]];
-        if(sum > maxPath)
-            break;
-    }
-    if(sum <= maxPath)
+    if(checkEachSequence(instance.getMatrix(), sequence, instance.getMaxPathLength(), nodeSize))
         return CodingHelper::encodeList(sequence);
+    else
+        return ""s;
+}
 
-    for (int i = 0; i < nodeSize - 1; ++i) {
-        for (int j = 0; j < nodeSize - 1; ++j) {
-            std::swap(sequence[j], sequence[j + 1]);
 
-            sequence[0] = sequence[nodeSize];
+bool TSPSolver::checkEachSequence(unsigned int** matrix, unsigned int *sequence, unsigned int maxSum, unsigned int level)  {
+    if(level == 1) {
+        long long int sum = 0;
+        int i = 1;
+        for(; i < sequence[0]; i++) {
+            sum += matrix[sequence[i]][sequence[i+1]];
+        }
+        sum += matrix[sequence[i]][sequence[1]];
+        if(sum <= maxSum)
+            return true;
+    }
+    else {
+        if (checkEachSequence(matrix, sequence, maxSum, level - 1))
+            return true;
+        for (int i = 1; i < level; i++) {
+            swap(sequence[i], sequence[level]);
+            if (checkEachSequence(matrix, sequence, maxSum, level - 1))
+                return true;
+            swap(sequence[i], sequence[level]);
         }
     }
+    return false;
 }
+
+
+
+
 
 
 

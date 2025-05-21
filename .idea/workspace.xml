@@ -24,8 +24,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="448c38ea-697b-4c29-b494-db3adab581b6" name="Changes" comment="thi E7_1">
+    <list default="true" id="448c38ea-697b-4c29-b494-db3adab581b6" name="Changes" comment="thi E7_3 angefangen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_THI/E_VII/TSPSolver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/_THI/E_VII/TSPSolver.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_THI/E_VII/TSPSolver.h" beforeDir="false" afterPath="$PROJECT_DIR$/_THI/E_VII/TSPSolver.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,11 +89,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="algorithms" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hs" TARGET_NAME="algorithms" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hs" RUN_TARGET_NAME="algorithms">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -132,7 +129,9 @@
       <workItem from="1747302094342" duration="5607000" />
       <workItem from="1747383667234" duration="1286000" />
       <workItem from="1747734130012" duration="13857000" />
-      <workItem from="1747771503489" duration="425000" />
+      <workItem from="1747771503489" duration="9528000" />
+      <workItem from="1747783446828" duration="13000" />
+      <workItem from="1747856225966" duration="4803000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1746873063886</created>
@@ -232,7 +231,28 @@
       <option name="project" value="LOCAL" />
       <updated>1747749343811</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="thi E7_1">
+      <created>1747774890322</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1747774890322</updated>
+    </task>
+    <task id="LOCAL-00016" summary="thi E7_2">
+      <created>1747777356001</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1747777356001</updated>
+    </task>
+    <task id="LOCAL-00017" summary="thi E7_3 angefangen">
+      <created>1747782941642</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1747782941642</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +272,19 @@
     <MESSAGE value="add workspace to git" />
     <MESSAGE value="algorithm E7" />
     <MESSAGE value="thi E7_1" />
-    <option name="LAST_COMMIT_MESSAGE" value="thi E7_1" />
+    <MESSAGE value="thi E7_2" />
+    <MESSAGE value="thi E7_3 angefangen" />
+    <option name="LAST_COMMIT_MESSAGE" value="thi E7_3 angefangen" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/_THI/E_VII/TSPInstance.cpp</url>
+          <line>10</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

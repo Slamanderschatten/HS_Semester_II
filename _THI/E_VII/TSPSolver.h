@@ -9,6 +9,7 @@ class TSPSolver {
 
 public:
     static string getSolution(const string& tsp);
+    static bool checkEachSequence(unsigned int **matrix, unsigned int* sequence, unsigned int maxSum, unsigned int level);
 
 
 private:
