@@ -1,3 +1,0 @@
-C:/Users/Medion/Documents/HS/repo/_THI/Splitter/cmake-build-debug/CMakeFiles/Splitter.dir
-C:/Users/Medion/Documents/HS/repo/_THI/Splitter/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/Medion/Documents/HS/repo/_THI/Splitter/cmake-build-debug/CMakeFiles/rebuild_cache.dir
