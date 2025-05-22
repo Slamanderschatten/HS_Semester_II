@@ -24,12 +24,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="448c38ea-697b-4c29-b494-db3adab581b6" name="Changes" comment="THI E6">
-      <change afterPath="$PROJECT_DIR$/_AUD/E_VIII/Sort.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_AUD/E_VIII/Sort.h" afterDir="false" />
+    <list default="true" id="448c38ea-697b-4c29-b494-db3adab581b6" name="Changes" comment="aud E 8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_AUD/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_AUD/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_AUD/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/_AUD/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_THI/Turingmaschine/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_THI/Turingmaschine/.idea/vcs.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +41,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="e8ee4204-c32b-4543-b0d7-55108b43329d" />
+    <option name="defaultAccountId" value="3de2d650-a688-4a85-9444-2efe9f8c48f0" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -62,21 +59,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/feuer/OneDrive/Documents/HS/repo/_THI&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Users/Medion/Documents/HS/repo",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\feuer\OneDrive\Documents\HS\repo\_THI" />
@@ -90,11 +88,6 @@
       </method>
     </configuration>
     <configuration name="Turingmaschine" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hs" TARGET_NAME="Turingmaschine" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hs" RUN_TARGET_NAME="Turingmaschine">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -142,6 +135,7 @@
       <workItem from="1747771503489" duration="9528000" />
       <workItem from="1747783446828" duration="13000" />
       <workItem from="1747856225966" duration="4803000" />
+      <workItem from="1747911402828" duration="64000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1746873063886</created>
@@ -262,7 +256,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747782941642</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="aud E 8">
+      <option name="closed" value="true" />
+      <created>1747910925346</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1747910925346</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -284,6 +286,7 @@
     <MESSAGE value="thi E7_1" />
     <MESSAGE value="thi E7_2" />
     <MESSAGE value="thi E7_3 angefangen" />
-    <option name="LAST_COMMIT_MESSAGE" value="thi E7_3 angefangen" />
+    <MESSAGE value="aud E 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="aud E 8" />
   </component>
 </project>
