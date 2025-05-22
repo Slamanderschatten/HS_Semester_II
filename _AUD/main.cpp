@@ -15,12 +15,13 @@
 #include "E_VI/Calculator.h"
 #include "E_VI/Calculator.cpp"
 #include "E_VII/Tabel.h"
+#include "E_VIII/Sort.h"
 
 
 
 
 
-#define TASK 25
+#define TASK 27
 #define SUBTASK 1
 
 
@@ -364,6 +365,45 @@ int main() {
 
 
         cout << "errors: " << errors << endl;
+    }
+#endif
+
+#if TASK == 27 // sort
+    {
+        const size_t n = 9;
+        int a[n]={0, 10, 20, 1, 11, 21, 2,12, 22};
+
+        // insertion-sort
+        for(int i : a)
+            cout << i << " ";
+        cout << " => insertion-sort need ";
+        cout << Sort<int>::insertionSort(a, n);
+        cout << " steps => ";
+        for(int i : a)
+            cout << i << " ";
+        cout << endl << endl;
+
+        //selection-sort
+        int b[n]={0, 10, 20, 1, 11, 21, 2,12, 22};
+        for(int i : b)
+            cout << i << " ";
+        cout << " => insertion-sort need ";
+        cout << Sort<int>::selectionSort(b, n);
+        cout << " steps => ";
+        for(int i : b)
+            cout << i << " ";
+        cout << endl << endl;
+
+        //exchange-sort (bubble-sort)
+        int c[n]={0, 10, 20, 1, 11, 21, 2,12, 22};
+        for(int i : c)
+            cout << i << " ";
+        cout << " => insertion-sort need ";
+        cout << Sort<int>::exchangeSort(c, n);
+        cout << " steps => ";
+        for(int i : c)
+            cout << i << " ";
+        cout << endl << endl;
     }
 #endif
 

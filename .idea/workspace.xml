@@ -24,10 +24,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="448c38ea-697b-4c29-b494-db3adab581b6" name="Changes" comment="thi E7_3 angefangen">
+    <list default="true" id="448c38ea-697b-4c29-b494-db3adab581b6" name="Changes" comment="THI E6">
+      <change afterPath="$PROJECT_DIR$/_AUD/E_VIII/Sort.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_AUD/E_VIII/Sort.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_THI/E_VII/TSPSolver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/_THI/E_VII/TSPSolver.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_THI/E_VII/TSPSolver.h" beforeDir="false" afterPath="$PROJECT_DIR$/_THI/E_VII/TSPSolver.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_AUD/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_AUD/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_AUD/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/_AUD/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +40,9 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="e8ee4204-c32b-4543-b0d7-55108b43329d" />
   </component>
@@ -78,13 +83,18 @@
       <recent name="C:\Users\feuer\OneDrive\Documents\HS\repo\_PRO2" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.theoretical">
+  <component name="RunManager" selected="CMake Application.algorithms">
     <configuration name="Goedeler" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hs" TARGET_NAME="Goedeler" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hs" RUN_TARGET_NAME="Goedeler">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="Turingmaschine" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hs" TARGET_NAME="Turingmaschine" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hs" RUN_TARGET_NAME="Turingmaschine">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -275,16 +285,5 @@
     <MESSAGE value="thi E7_2" />
     <MESSAGE value="thi E7_3 angefangen" />
     <option name="LAST_COMMIT_MESSAGE" value="thi E7_3 angefangen" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/_THI/E_VII/TSPInstance.cpp</url>
-          <line>10</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
