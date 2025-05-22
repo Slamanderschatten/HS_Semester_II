@@ -1,0 +1,7 @@
+Aufgabe 1:
+
+easy splittet das programm so das die Ausgabe println(x) zwei mal ausgeführt wird
+mit den dangegebenen zwei x werten
+
+
+Aufgabe 2:

@@ -24,9 +24,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="448c38ea-697b-4c29-b494-db3adab581b6" name="Changes" comment="aud E 8">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_THI/Turingmaschine/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/_THI/Turingmaschine/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="448c38ea-697b-4c29-b494-db3adab581b6" name="Changes" comment="thi create splitter project">
+      <change afterPath="$PROJECT_DIR$/_THI/E_IIX/E_IIX.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +36,13 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -136,6 +142,7 @@
       <workItem from="1747783446828" duration="13000" />
       <workItem from="1747856225966" duration="4803000" />
       <workItem from="1747911402828" duration="64000" />
+      <workItem from="1747912007751" duration="380000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1746873063886</created>
@@ -264,7 +271,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747910925346</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="thi create splitter project">
+      <option name="closed" value="true" />
+      <created>1747912040049</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1747912040049</updated>
+    </task>
+    <task id="LOCAL-00020" summary="thi create splitter project">
+      <option name="closed" value="true" />
+      <created>1747912076091</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1747912076091</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +310,7 @@
     <MESSAGE value="thi E7_2" />
     <MESSAGE value="thi E7_3 angefangen" />
     <MESSAGE value="aud E 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="aud E 8" />
+    <MESSAGE value="thi create splitter project" />
+    <option name="LAST_COMMIT_MESSAGE" value="thi create splitter project" />
   </component>
 </project>
