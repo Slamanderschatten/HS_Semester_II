@@ -130,7 +130,7 @@ int main() {
 #if SUBTASK == 3
     {
         const unsigned int h = numeric_limits<unsigned int>::max();
-        auto* tspInstanceArray = new unsigned int[102] {101, 246,
+        /*auto* tspInstanceArray = new unsigned int[102] {101, 246,
                                                        h,   29,  20,  21,  16,  31,  100, 12,  4,   31,
                                                        29,  h,   15,  29,  28,  40,  72,  21,  29,  41,
                                                        20,  15,  h,   15,  14,  25,  81,  9,   23,  27,
@@ -141,8 +141,21 @@ int main() {
                                                        12,  21,  9,   12,  9,   24,  90,  h,   15,  25,
                                                        4,   29,  23,  25,  20,  36,  101, 15,  h,   35,
                                                        31,  41,  27,  13,  16,  3,   99,  25,  35,  h
+        };*/
+        auto* tspInstanceArray = new unsigned int[102] {101, 246,
+                                                        h,   h,  h,  h,  h,  h,  h, h,  h,   1,
+                                                        h,   h,  h,  h,  h,  h,  h, h,  1,   h,
+                                                        h,   h,  h,  h,  h,  h,  h, 1,  h,   h,
+                                                        h,   h,  h,  h,  h,  h,  1, h,  h,   h,
+                                                        h,   h,  h,  h,  h,  1,  h, h,  h,   h,
+                                                        h,   h,  h,  h,  1,  h,  h, h,  h,   h,
+                                                        h,   h,  h,  1,  h,  h,  h, h,  h,   h,
+                                                        h,   h,  1,  h,  h,  h,  h, h,  h,   h,
+                                                        h,   1,  h,  h,  h,  h,  h, h,  h,   h,
+                                                        1,   h,  h,  h,  h,  h,  h, h,  h,   h
         };
-        auto* tspInstanceArrayResult = CodingHelper::decodeList(TSPSolver::getSolution(CodingHelper::encodeList(tspInstanceArray)));
+        long long int c = 0;
+        auto* tspInstanceArrayResult = CodingHelper::decodeList(TSPSolver::getSolution(CodingHelper::encodeList(tspInstanceArray), c));
 
         for(int i = 0; i < tspInstanceArrayResult[0]+1; i++) {
             cout << tspInstanceArrayResult[i] << " ";

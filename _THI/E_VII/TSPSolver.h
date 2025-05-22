@@ -8,8 +8,8 @@ using namespace std;
 class TSPSolver {
 
 public:
-    static string getSolution(const string& tsp);
-    static bool checkEachSequence(unsigned int **matrix, unsigned int* sequence, unsigned int maxSum, unsigned int level);
+    static string getSolution(const string& tsp, long long int& c);
+    static bool checkEachSequence(unsigned int **matrix, unsigned int* sequence, unsigned int maxSum, unsigned int level, long long int& c);
 
 
 private:

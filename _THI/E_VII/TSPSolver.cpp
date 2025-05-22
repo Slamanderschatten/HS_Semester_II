@@ -8,7 +8,7 @@
 using namespace std;
 
 
-string TSPSolver::getSolution(const string& tsp) {
+string TSPSolver::getSolution(const string& tsp, long long int& c) {
     TSPInstance instance(tsp);
 
     unsigned int nodeSize = instance.getSize();
@@ -18,14 +18,15 @@ string TSPSolver::getSolution(const string& tsp) {
     for(size_t i = 0; i < nodeSize; i++)
         sequence[i+1] = i;
 
-    if(checkEachSequence(instance.getMatrix(), sequence, instance.getMaxPathLength(), nodeSize))
+    if(checkEachSequence(instance.getMatrix(), sequence, instance.getMaxPathLength(), nodeSize, c))
         return CodingHelper::encodeList(sequence);
     else
         return ""s;
 }
 
 
-bool TSPSolver::checkEachSequence(unsigned int** matrix, unsigned int *sequence, unsigned int maxSum, unsigned int level)  {
+bool TSPSolver::checkEachSequence(unsigned int** matrix, unsigned int *sequence, unsigned int maxSum, unsigned int level, long long int& c)  {
+    c++;
     if(level == 1) {
         long long int sum = 0;
         int i = 1;
@@ -37,11 +38,11 @@ bool TSPSolver::checkEachSequence(unsigned int** matrix, unsigned int *sequence,
             return true;
     }
     else {
-        if (checkEachSequence(matrix, sequence, maxSum, level - 1))
+        if (checkEachSequence(matrix, sequence, maxSum, level - 1, c))
             return true;
         for (int i = 1; i < level; i++) {
             swap(sequence[i], sequence[level]);
-            if (checkEachSequence(matrix, sequence, maxSum, level - 1))
+            if (checkEachSequence(matrix, sequence, maxSum, level - 1, c))
                 return true;
             swap(sequence[i], sequence[level]);
         }
