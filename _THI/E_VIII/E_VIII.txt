@@ -1,0 +1,22 @@
+Aufgabe 2:
+
+a)
+weil kein wert über 1023 erreicht wird mit y
+
+b)
+der höchste wert ist 1023 und es werden alle werte von 0 bis 2^10 ausgegeben
+
+c)
+1024
+
+d)
+weil das programm 1024 mal parallel läuft
+
+e)
+64000 / 64 = 1000
+
+
+Aufgabe 3:
+nein
+ja
+nein

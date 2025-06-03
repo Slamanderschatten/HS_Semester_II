@@ -11,8 +11,8 @@
 
 
 
-#define TASK 7
-#define SUBTASK 3
+#define TASK 6
+#define SUBTASK 2
 
 
 

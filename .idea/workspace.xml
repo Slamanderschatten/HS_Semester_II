@@ -15,6 +15,7 @@
       <config projectName="hs" targetName="theoretical" />
       <config projectName="hs" targetName="Turingmaschine" />
       <config projectName="hs" targetName="programming_II" />
+      <config projectName="hs" targetName="Splitter" />
       <config projectName="hs" targetName="algorithms" />
     </generated>
   </component>
@@ -25,11 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="448c38ea-697b-4c29-b494-db3adab581b6" name="Changes" comment="thi E8 started">
+      <change afterPath="$PROJECT_DIR$/_THI/E_VIII/E_VIII.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_THI/Splitter/Splitter/sos.mjava" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_THI/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_THI/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_THI/E_VII/TSPSolver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/_THI/E_VII/TSPSolver.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_THI/E_VII/TSPSolver.h" beforeDir="false" afterPath="$PROJECT_DIR$/_THI/E_VII/TSPSolver.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_THI/Splitter/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/_THI/Splitter/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_THI/Splitter/Splitter/counting.mjava" beforeDir="false" afterPath="$PROJECT_DIR$/_THI/Splitter/Splitter/counting.mjava" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/_THI/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/_THI/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,30 +70,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Medion/Documents/HS/repo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "C:/Users/feuer/OneDrive/Documents/HS/repo/_THI/Splitter/Splitter",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\feuer\OneDrive\Documents\HS\repo\_THI\Splitter\Splitter" />
       <recent name="C:\Users\feuer\OneDrive\Documents\HS\repo\_THI" />
       <recent name="C:\Users\feuer\OneDrive\Documents\HS\repo\_PRO2" />
     </key>
   </component>
   <component name="RunManager" selected="CMake Application.theoretical">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Goedeler" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hs" TARGET_NAME="Goedeler" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hs" RUN_TARGET_NAME="Goedeler">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Splitter" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hs" TARGET_NAME="Splitter" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hs" RUN_TARGET_NAME="Splitter">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -123,6 +134,7 @@
       <item itemvalue="CMake Application.programming_II" />
       <item itemvalue="CMake Application.theoretical" />
       <item itemvalue="CMake Application.Goedeler" />
+      <item itemvalue="CMake Application.Splitter" />
       <item itemvalue="CMake Application.Turingmaschine" />
     </list>
   </component>
