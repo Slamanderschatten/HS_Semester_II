@@ -15,14 +15,14 @@
 #include "E_VI/Calculator.h"
 #include "E_VI/Calculator.cpp"
 #include "E_VII/Tabel.h"
-#include "E_VIII/Sort.h"
+#include "sort/Sort.h"
 
 
 
 
 
-#define TASK 27
-#define SUBTASK 1
+#define TASK 36
+#define SUBTASK 2
 
 
 
@@ -34,6 +34,8 @@
 int main() {
     using namespace hs_aud;
     using namespace std;
+
+    srand(time(0));
 
 
 #if TASK == 1
@@ -387,7 +389,7 @@ int main() {
         int b[n]={0, 10, 20, 1, 11, 21, 2,12, 22};
         for(int i : b)
             cout << i << " ";
-        cout << " => insertion-sort need ";
+        cout << " => selection-sort need ";
         cout << Sort<int>::selectionSort(b, n);
         cout << " steps => ";
         for(int i : b)
@@ -398,12 +400,324 @@ int main() {
         int c[n]={0, 10, 20, 1, 11, 21, 2,12, 22};
         for(int i : c)
             cout << i << " ";
-        cout << " => insertion-sort need ";
+        cout << " => exchange-sort need ";
         cout << Sort<int>::exchangeSort(c, n);
         cout << " steps => ";
         for(int i : c)
             cout << i << " ";
         cout << endl << endl;
+    }
+#endif
+
+#if TASK == 33 // sort
+    {
+        const size_t n = 9;
+        int a[n]={0, 10, 20, 1, 11, 21, 2,12, 22};
+
+        // insertion-sort
+        for(int i : a)
+            cout << i << " ";
+        cout << " => insertion-sort need ";
+        cout << Sort<int>::insertionSort(a, n);
+        cout << " steps => ";
+        for(int i : a)
+            cout << i << " ";
+        cout << endl << endl;
+
+        //selection-sort
+        int b[n]={0, 10, 20, 1, 11, 21, 2,12, 22};
+        for(int i : b)
+            cout << i << " ";
+        cout << " => selection-sort need ";
+        cout << Sort<int>::selectionSort(b, n);
+        cout << " steps => ";
+        for(int i : b)
+            cout << i << " ";
+        cout << endl << endl;
+
+        //exchange-sort (bubble-sort)
+        int c[n]={0, 10, 20, 1, 11, 21, 2,12, 22};
+        for(int i : c)
+            cout << i << " ";
+        cout << " => exchange-sort need ";
+        cout << Sort<int>::exchangeSort(c, n);
+        cout << " steps => ";
+        for(int i : c)
+            cout << i << " ";
+        cout << endl << endl;
+
+        // quick-sort a
+        for(int i : a)
+            cout << i << " ";
+        cout << " => quick-sort a need ";
+        cout << Sort<int>::quickSort<1>(a, 0, n-1);
+        cout << " steps => ";
+        for(int i : a)
+            cout << i << " ";
+        cout << endl << endl;
+
+        // quick-sort b
+        for(int i : a)
+            cout << i << " ";
+        cout << " => quick-sort b need ";
+        cout << Sort<int>::quickSort<2>(a, 0, n-1);
+        cout << " steps => ";
+        for(int i : a)
+            cout << i << " ";
+        cout << endl << endl;
+
+        // quick-sort n
+        for(int i : a)
+            cout << i << " ";
+        cout << " => quick-sort n need ";
+        cout << Sort<int>::quickSort<3>(a, 0, n-1);
+        cout << " steps => ";
+        for(int i : a)
+            cout << i << " ";
+        cout << endl << endl;
+    }
+#endif
+
+#if TASK == 35 // quick-sort
+    {
+
+
+        const size_t n = 6000;
+        vector<int> a;
+
+        /** 2,1,4,3,6,5,8,7,10,9,12,11,14,13,…… */
+        cout << "input: 2,1,4,3,6,5,8,7,10,9,12,11,14,13,……\n\n";
+
+
+        // insertion-sort
+        a.clear();
+        for(int i = 1; i <= n/2; i++) {
+            a.push_back(2*i);
+            if(i < 10)
+                cout << a.back() << " ";
+            a.push_back(2*i-1);
+            if(i < 10)
+                cout << a.back() << " ";
+        }
+        cout << "\n => insertion-sort need ";
+        cout << Sort<int>::insertionSort(a.data(), n);
+        cout << " steps => \n";
+        for(int i = 0; i < 20 && i < n; i++)
+            cout << a[i] << " ";
+        cout << endl << endl;
+
+        // quick-sort
+        a.clear();
+        for(int i = 1; i <= n/2; i++) {
+            a.push_back(2*i);
+            if(i < 10)
+                cout << a.back() << " ";
+            a.push_back(2*i-1);
+            if(i < 10)
+                cout << a.back() << " ";
+        }
+        cout << "\n => quick-sort need ";
+        cout << Sort<int>::quickSort<1>(a.data(), 0, n-1);
+        cout << " steps => \n";
+        for(int i = 0; i < 20 && i < n; i++)
+            cout << a[i] << " ";
+        cout << endl << endl;
+
+
+        /** 5,4,3,2,1,10,9,8,7,6,15,14,13,12,11,20,19,18,17,16,…. */
+        cout << "\n\n input: 5,4,3,2,1,10,9,8,7,6,15,14,13,12,11,20,19,18,17,16,….\n\n";
+
+        // insertion-sort
+        a.clear();
+        for(int i = 1; i <= n/5; i++) {
+            a.push_back(5*i);
+            if(i < 10)
+                cout << a.back() << " ";
+            a.push_back(5*i-1);
+            if(i < 10)
+                cout << a.back() << " ";
+            a.push_back(5*i-2);
+            if(i < 10)
+                cout << a.back() << " ";
+            a.push_back(5*i-3);
+            if(i < 10)
+                cout << a.back() << " ";
+            a.push_back(5*i-4);
+            if(i < 10)
+                cout << a.back() << " ";
+        }
+        cout << "\n => insertion-sort need ";
+        cout << Sort<int>::insertionSort(a.data(), n);
+        cout << " steps => \n";
+        for(int i = 0; i < 20 && i < n; i++)
+            cout << a[i] << " ";
+        cout << endl << endl;
+
+        // quick-sort
+        a.clear();
+        for(int i = 1; i <= n/5; i++) {
+            a.push_back(5*i);
+            if(i < 10)
+                cout << a.back() << " ";
+            a.push_back(5*i-1);
+            if(i < 10)
+                cout << a.back() << " ";
+            a.push_back(5*i-2);
+            if(i < 10)
+                cout << a.back() << " ";
+            a.push_back(5*i-3);
+            if(i < 10)
+                cout << a.back() << " ";
+            a.push_back(5*i-4);
+            if(i < 10)
+                cout << a.back() << " ";
+        }
+        cout << "\n => quick-sort need ";
+        cout << Sort<int>::quickSort<1>(a.data(), 0, n-1);
+        cout << " steps => \n";
+        for(int i = 0; i < 20 && i < n; i++)
+            cout << a[i] << " ";
+        cout << endl << endl;
+
+
+        /** k,k-1,k-2,…..1,2k,2k-1,2k-2,….k+1,3k,3k-1,3k-2,….2k+1,…… */
+        cout << "\n\n input: k,k-1,k-2,…..1,2k,2k-1,2k-2,….k+1,3k,3k-1,3k-2,….2k+1,……\n\n";
+        int k = 10;
+
+        // insertion-sort
+        a.clear();
+        for(int i = 1; i <= n / k; i++) {
+            for(int j = 0; j < k; j++) {
+                a.push_back(i*k-j);
+                if(i<3)
+                    cout << a.back() << " ";
+            }
+        }
+        cout << "\n => insertion-sort need ";
+        cout << Sort<int>::insertionSort(a.data(), n);
+        cout << " steps => \n";
+        for(int i = 0; i < 20 && i < n; i++)
+            cout << a[i] << " ";
+        cout << endl << endl;
+
+        // quick-sort
+        a.clear();
+        for(int i = 1; i <= n; i++) {
+            for(int j = 0; j < k; j++) {
+                a.push_back(k-j);
+                if(i<3)
+                    cout << a.back() << " ";
+            }
+        }
+        cout << "\n => quick-sort need ";
+        cout << Sort<int>::quickSort<1>(a.data(), 0, n-1);
+        cout << " steps => \n";
+        for(int i = 0; i < 20 && i < n; i++)
+            cout << a[i] << " ";
+        cout << endl << endl;
+
+    }
+#endif
+
+#if TASK == 36 // merge-sort
+    {
+
+
+        const size_t n = 8;
+        vector<int> a;
+
+        /** 2,1,4,3,6,5,8,7,10,9,12,11,14,13,…… */
+        cout << "input: 2,1,4,3,6,5,8,7,10,9,12,11,14,13,……\n\n";
+
+        // quick-sort
+        a.clear();
+        for(int i = 1; i <= n/2; i++) {
+            a.push_back(2*i);
+            if(i < 10)
+                cout << a.back() << " ";
+            a.push_back(2*i-1);
+            if(i < 10)
+                cout << a.back() << " ";
+        }
+        cout << "\n => merge-sort need ";
+        cout << Sort<int>::mergeSortInPlace(a.data(), 0, a.size() - 1);
+        cout << " steps => \n";
+        for(int i = 0; i < 20 && i < n; i++)
+            cout << a[i] << " ";
+        cout << endl << endl;
+
+
+        /** 5,4,3,2,1,10,9,8,7,6,15,14,13,12,11,20,19,18,17,16,…. */
+        cout << "\n\n input: 5,4,3,2,1,10,9,8,7,6,15,14,13,12,11,20,19,18,17,16,….\n\n";
+
+        // quick-sort
+        a.clear();
+        for(int i = 1; i <= n/5; i++) {
+            a.push_back(5*i);
+            if(i < 10)
+                cout << a.back() << " ";
+            a.push_back(5*i-1);
+            if(i < 10)
+                cout << a.back() << " ";
+            a.push_back(5*i-2);
+            if(i < 10)
+                cout << a.back() << " ";
+            a.push_back(5*i-3);
+            if(i < 10)
+                cout << a.back() << " ";
+            a.push_back(5*i-4);
+            if(i < 10)
+                cout << a.back() << " ";
+        }
+        cout << "\n => merge-sort need ";
+        cout << Sort<int>::mergeSortInPlace(a.data(), 0, a.size() - 1);
+        cout << " steps => \n";
+        for(int i = 0; i < 20 && i < n; i++)
+            cout << a[i] << " ";
+        cout << endl << endl;
+
+
+        /** k,k-1,k-2,…..1,2k,2k-1,2k-2,….k+1,3k,3k-1,3k-2,….2k+1,…… */
+        cout << "\n\n input: k,k-1,k-2,…..1,2k,2k-1,2k-2,….k+1,3k,3k-1,3k-2,….2k+1,……\n\n";
+        int k = 4;
+
+        // quick-sort
+        a.clear();
+        for(int i = 1; i <= n / k; i++) {
+            for(int j = 0; j < k; j++) {
+                a.push_back(i*k-j);
+                if(i<3)
+                    cout << a.back() << " ";
+            }
+        }
+        cout << "\n => merge-sort need ";
+        cout << Sort<int>::mergeSortInPlace(a.data(), 0, a.size() - 1);
+        cout << " steps => \n";
+        for(int i = 0; i < 20 && i < n; i++)
+            cout << a[i] << " ";
+        cout << endl << endl;
+
+
+        /** 1,4,5,7,2,3,8,9 */
+        cout << "\n\n input: 1,4,5,7,2,3,8,9\n\n";
+
+        // quick-sort
+        a.clear();
+        a.push_back(1); cout << a.back() << " ";
+        a.push_back(4); cout << a.back() << " ";
+        a.push_back(5); cout << a.back() << " ";
+        a.push_back(7); cout << a.back() << " ";
+        a.push_back(2); cout << a.back() << " ";
+        a.push_back(3); cout << a.back() << " ";
+        a.push_back(8); cout << a.back() << " ";
+        a.push_back(9); cout << a.back() << " ";
+        cout << "\n => merge-sort need ";
+        cout << Sort<int>::mergeSortInPlace(a.data(), 0, a.size() - 1);
+        cout << " steps => \n";
+        for(int i = 0; i < 20 && i < n; i++)
+            cout << a[i] << " ";
+        cout << endl << endl;
+
     }
 #endif
 
