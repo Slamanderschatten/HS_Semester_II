@@ -1,0 +1,48 @@
+Aufgabe 1:
+
+a) A UND B = {5, worscht}
+b) a ODER B = {3,5,worscht,17,9,2}
+c) A UND B = {5, worscht}
+d) A - B = {3,17}
+e) B - A = {9,2}
+f) nicht möglich das wir nicht wissen aus welcher obermenge die einzelnen elemente stammen
+
+Aufgabe 2:
+
+a)  2^{3} = {(2,2,2)}
+b)  2^3 = 8
+c)  2^{17,VIERECK,b} = ???
+d)  2^2^L = {((L,L),(L,L))}
+
+Aufgabe 3:
+
+a)  = {LEER, a,b}^*
+b)  es gibt keine akzeptierte eingabe
+c)  = {LEER}
+
+
+Aufgabe 4:
+
+             ,-------a-------.
+            \/                |
+->  (s) -a> (a1)-a> (a2)-a> //e\\
+      `--b> (b1)-b> (b2)-b> \\ //
+            /\                |
+             `-------b-------´
+
+
+Aufgabe 5:
+
+->  (s)
+
+
+Aufgabe 6:
+
+     ,0-.
+    \/ ,-'
+-> ((s))
+    /\ `-.
+     `1-´
+
+Aufgabe 7:
+Ü

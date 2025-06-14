@@ -25,14 +25,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="448c38ea-697b-4c29-b494-db3adab581b6" name="Changes" comment="thi E8">
-      <change afterPath="$PROJECT_DIR$/_AUD/E_IX/E_IX.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_AUD/sort/Sort.h" afterDir="false" />
+    <list default="true" id="448c38ea-697b-4c29-b494-db3adab581b6" name="Changes" comment="aud E 30 - 36">
+      <change afterPath="$PROJECT_DIR$/_THI/E_IX/E_IX.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_THI/E_X/E_X.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_AUD/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/_AUD/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_AUD/E_VIII/Sort.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/_AUD/sort/Sort.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_AUD/E_VIII/Sort.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/_AUD/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/_AUD/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +50,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="3de2d650-a688-4a85-9444-2efe9f8c48f0" />
+    <option name="defaultAccountId" value="e8ee4204-c32b-4543-b0d7-55108b43329d" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -111,11 +107,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="algorithms" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="hs" TARGET_NAME="algorithms" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="hs" RUN_TARGET_NAME="algorithms">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -165,7 +156,8 @@
       <workItem from="1747921530669" duration="3792000" />
       <workItem from="1747934090321" duration="3000" />
       <workItem from="1749720444576" duration="6860000" />
-      <workItem from="1749826755904" duration="5057000" />
+      <workItem from="1749826755904" duration="7001000" />
+      <workItem from="1749888493107" duration="2844000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1746873063886</created>
@@ -326,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1747912611096</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="aud E 30 - 36">
+      <created>1749832761831</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1749832761831</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -351,7 +350,8 @@
     <MESSAGE value="aud E 8" />
     <MESSAGE value="thi create splitter project" />
     <MESSAGE value="thi E8 started" />
-    <option name="LAST_COMMIT_MESSAGE" value="thi E8 started" />
+    <MESSAGE value="aud E 30 - 36" />
+    <option name="LAST_COMMIT_MESSAGE" value="aud E 30 - 36" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
